@@ -1,0 +1,168 @@
+@import "reset.css";
+
+body {
+  width: 400px;
+  padding: 0px 10px;
+}
+
+.screen-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 100px;
+  padding: 0 10px 20px 10px;
+  margin: 0px -10px;
+
+  font-size: 20px;
+  background-color: #fecd31;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 100px;
+
+  width: 400px;
+  height: 65px;
+  border-radius: 50px;
+
+  background-color: white;
+  box-shadow: 0px 3px rgba(230, 230, 230, 0.7);
+}
+
+.search-form__input,
+.search-form__button {
+  opacity: 0.5;
+}
+
+.search-form__input {
+  border: none;
+  width: 75%;
+  font-size: 15px;
+  margin-left: 40px;
+}
+
+.search-form__input:focus {
+  outline: none;
+}
+
+.search-form__button {
+  margin-right: 20px;
+}
+
+.title-and-content:nth-of-type(1) {
+  margin-top: 70px;
+}
+
+.title-and-content:not(.title-and-content:nth-of-type(1)) {
+  margin-top: 30px;
+  text-transform: capitalize;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.content {
+  display: flex;
+  text-transform: capitalize;
+}
+
+[class*="content__img"] {
+  width: 125px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.content__img--small {
+  width: 75px;
+  height: 115px;
+}
+
+.content__img--middle {
+  height: 150px;
+}
+
+.content__book-title,
+.content__writer-name {
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+
+.content__book-writer,
+.content__writer-info {
+  opacity: 0.2;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.content__book-rating {
+  color: #ffce33;
+}
+
+.content__info .content__book-rating {
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.content__book-rating i:last-child {
+  color: #ededed;
+}
+
+.content__book-genre {
+  margin-bottom: 25px;
+}
+
+.content__book-genre span {
+  padding: 5px 15px;
+  margin-right: 5px;
+  font-size: 13px;
+  background-color: #f7f7f7;
+}
+
+.content__button {
+  display: flex;
+  align-items: center;
+}
+
+.button__book-mark {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 50px;
+  background-color: #fecd31;
+}
+
+.button__book-now {
+  color: white;
+  padding: 15px 30px;
+  font-size: 12px;
+  border-radius: 5px;
+  background-color: #0d0d0d;
+}
+
+.content__scroll {
+  overflow: hidden;
+}
+
+.content__scroll-element {
+  display: flex;
+  flex-direction: column;
+}
+
+.content__scroll-element .content__book-rating {
+  margin-top: 15px;
+  font-size: 1px;
+}
